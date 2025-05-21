@@ -2,11 +2,11 @@ function [start_loc, Az_deg, El_deg, Rcorr, t123]  = get_2d_result_single_window
 if strcmp(type, 'chj')
     % 从化局
     d12 = 41.6496;
-    d13 = 48.5209;
-    d23 = 25.0182;
+    d13 = 36.9015;
+    d23 = 35.4481;
     angle12 = -2.8381;
-    angle13 = 28.2006;
-    angle23 = 87.3358;
+    angle13 = -129.6036;
+    angle23 = -59.3432;
 elseif strcmp(type, 'yld')
     % 引雷点
     angle12 = -110.8477;
