@@ -1,10 +1,10 @@
 x_range = [-50000, 50000];
-y_range = [-50000, 50000];
-z_range = [0, 50000];
+y_range = [-50000, 0];
+z_range = [0, 6000];
 
 condition1 = [all_match_results.dlta] < 30000;
-condition2 = [all_match_results.yld_start_loc] > mapping_start_signal_loc;
-condition3 = [all_match_results.yld_start_loc] < end_signal_loc;
+condition2 = [all_match_results.yld_start_loc] > 3.6e8;
+condition3 = [all_match_results.yld_start_loc] < 4.8e8;
 filtered_match_indices1 = find(condition1(:)');
 filtered_match_indices2 = find(condition2(:)');
 filtered_match_indices3 = find(condition3(:)');

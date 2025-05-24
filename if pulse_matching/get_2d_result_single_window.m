@@ -21,7 +21,7 @@ start_loc = 0;
 Az_deg = 0;
 El_deg = 0;
 Rcorr = 0;
-t123 = 0;
+t123 = 100;
 c = 0.299792458;
 [ch1_up, ch2_up, ch3_up] = deal(...
     upsampling(ch1, 50)', ...
